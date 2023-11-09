@@ -1,0 +1,106 @@
+.cartnotfount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.cart-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    .checkout {
+        position: fixed;
+        top: 200px;
+        left: 0;
+        background-color: rgb(183, 183, 240);
+        height: 140px;
+        width: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 10px;
+
+        .purchage {
+            button {
+                color: white;
+                background-color: blue;
+                height: 30px;
+                width: 100px;
+                border-radius: 5px;
+                font-size: 18px;
+                border: none;
+            }
+        }
+    }
+
+    .product-container {
+        // height: 300vh;
+        display: flex;
+        // margin: auto;
+
+        justify-content: center;
+        width: 80%;
+        align-items: end;
+        // flex-direction: column;
+        flex-wrap: wrap;
+
+        .product {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 180px;
+            height: 350px;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 8px;
+            // border: 2px solid black;
+            box-shadow: 0 0 10px 2px grey;
+
+            .image {
+                width: 100%;
+                height: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .action {
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                justify-content: space-around;
+
+            }
+
+            .removefromcart {
+                width: 70%;
+
+                button {
+                    height: 45px;
+                    font-size: 17px;
+                    border-radius: 5px;
+                    width: 100%;
+                    background-color: red;
+                    color: red;
+                    color: white;
+                }
+            }
+        }
+    }
+}

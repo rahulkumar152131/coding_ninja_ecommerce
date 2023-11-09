@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/header/Navbar";
+import Home from "./pages/home/Home";
+import Cart from "./pages/cart/Cart";
+import SignIn from "./pages/signin/SignIn";
+import SignUp from "./pages/signup/SignUp";
+import Order from "./pages/order/Order";
+import { CustomContext } from "./context/productContext";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CustomContext>
+            <ToastContainer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          } />
+
+          <Route path="/cart" element={
+            <>
+              <Navbar />
+              <Cart />
+            </>
+          } />
+          <Route path="/myorder" element={
+            <>
+              <Navbar />
+              <Order />
+            </>
+          } />
+          <Route path="/signup" element={
+            <>
+              <Navbar />
+              <SignUp />
+            </>
+          } />
+          <Route path="/signin" element={
+            <>
+              <Navbar />
+              <SignIn />
+            </>
+          } />
+        </Routes>
+
+      </BrowserRouter>
+    </CustomContext>
   );
 }
 

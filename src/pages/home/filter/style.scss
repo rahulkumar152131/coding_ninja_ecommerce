@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(213, 213, 224);
+    height: 60%;
+    border-radius: 15px;
+    position: fixed;
+    top: 150px;
+    width: 24%;
+    
+
+    // margin-left: 50px;
+
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .range-input {
+            width: 90%;
+            input {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .catogorytitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .catogary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+        font-size: 13px;
+
+        // div {
+        //     input {
+        //         font-size: 10px;
+        //     }
+        // }
+    }
+}

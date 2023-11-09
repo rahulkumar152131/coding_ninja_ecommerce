@@ -1,0 +1,55 @@
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+
+    .order-title {
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+
+    .allorder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        // width: 70%;
+
+        .order-on {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        table {
+            margin: 0;
+
+            th,
+            td {
+                text-align: center;
+                padding: 8px;
+                background-color: rgb(248, 234, 234);
+            }
+
+            tfoot {
+                background-color: rgb(248, 234, 234);
+
+                td {
+
+                    text-align: end;
+                }
+
+
+
+
+
+            }
+        }
+
+
+
+    }
+
+}
